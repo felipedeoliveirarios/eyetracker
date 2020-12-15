@@ -3,6 +3,8 @@ Este repositório contém uma implementação do trabalho *Gaze determination vi
 
 A idéia consiste em segmentar rostos à partir da imagem, olhos à partir do rosto, e as íris à partir dos olhos. Em seguida, a íris é modelada como uma elipse. Esta elipse é assumida como sendo a projeção de um disco plano rotacionado, onde o ângulo de rotação do disco corresponde ao ângulo de rotação do olho.
 
+Esta implementação se propõe a aplicar redes neurais pré-treinadas ao método já existente, agilizando a segmentação.
+
 ## Segmentação
 A segmentação do rosto é feita usando o detector de rostos incluso no dlib, obtido através da chamada `get_frontal_face_detector()` e usado através da chamada como método do objeto retornado. O objeto detecta rostos através de um *sliding window classificator*.
 
