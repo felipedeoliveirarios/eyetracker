@@ -38,7 +38,17 @@ sudo apt-get install libboost-all-dev
 Para guias de instalação para outros sistemas operacionais, clique [aqui](https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/). Após clonar o repositório, é possível instalar os pacotes necessários usando o pip com o comando ```pip install -r requirements.txt```. A instalação do dlib pode demorar um pouco. Talvez seja conveniente fazer a instalação dos pacotes pip em um ambiente virtual.
 
 ## Executando o Projeto
-Para executar o projeto, com as dependências devidamente instaladas, use o comando ```python main.py <caminho_da_imagem>```. O projeto inclui imagens de teste na pasta test.
+Para executar o projeto, com as dependências devidamente instaladas, use o comando `python3 main.py` com os argumentos adicionais: 
+
+|           Argumento             | Abreviação                | Descrição                                                        |
+|:-------------------------------:|---------------------------|------------------------------------------------------------------|
+| `--image <caminho_do_arquivo>`  | `-i <caminho_do_arquivo>` | Executa o programa usando um arquivo de imagem especificado.     |
+| `--video <caminho_do_arquivo>`  | `-v <caminho_do_arquivo>` | Executa o programa usando um arquivo de vídeo especificado.      |
+| `--camera`                      | `-c`                      | Executa o programa à partir da entrada da câmera.                |
+| `--show`                        | `-s`                      | Exibe as imagens intermediárias geradas durante o processamento. |
+| `--output <caminho_do_arquivo>` | `-o <caminho_do_arquivo>` | Salva uma imagem de saída com os resultados da execução.         |
+
+O projeto inclui imagens de teste na pasta test.
 
 ## Referências
 <a id="1">[1]</a> 
@@ -50,3 +60,11 @@ Image and Vision Computing 19, 2001. p. 891-911
 KAZEMI, Vahid; SULLIVAN, Josephine. 
 **One Millisecond Face Alignment with an Ensemble of Regression Trees**. 
 Proceedings of the IEEE conference on computer vision and pattern recognition, 2014. p. 1867-1874.
+
+HAMMEL, Ben; SULLIVAN-MOLINA, Nick.
+**bdhammel/least-squares-ellipse-fitting: v2.0.0**
+Zenodo, Mar, 2020.
+
+HALIR, Radin; FLUSSER, Jan.
+**Numerically Stable Direct Least Squares Fitting of Ellipses**
+Proc. 6th International Conference in Central Europe on Computer Graphics and Visualization, 1998. p. 125-132
